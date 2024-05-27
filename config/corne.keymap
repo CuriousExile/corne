@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include "keys_de.h"
 
 / {
     keymap {
@@ -14,10 +15,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB           &kp Q          &kp W  &kp E         &kp R  &kp T        &kp Z    &kp U  &kp I          &kp O      &kp SLASH   &kp DELETE
-&kp LEFT_SHIFT    &kp A          &kp S  &kp D         &kp F  &kp G        &kp H    &kp J  &kp K          &kp L      &kp P       &kp SEMICOLON
-&kp LEFT_CONTROL  &kp AMPERSAND  &kp Y  &kp X         &kp C  &kp V        &kp B    &kp N  &kp M          &kp COMMA  &kp PERIOD  &kp ESC
-                                        &kp LEFT_ALT  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp BACKSPACE
+&kp DE_TAB          &kp DE_Q          &kp DE_W  &kp DE_E         &kp DE_R  &kp DE_T        &kp DE_Z    &kp DE_U  &kp DE_I          &kp DE_O      &kp DE_SLASH   &kp DE_DELETE
+&kp DE_LEFT_SHIFT   &kp DE_A          &kp DE_S  &kp DE_D         &kp DE_F  &kp DE_G        &kp DE_H    &kp DE_J  &kp DE_K          &kp DE_L      &kp DE_P       &kp DE_SEMICOLON
+&kp DE_LEFT_CONTROL &kp DE_AMPERSAND  &kp DE_Y  &kp DE_X         &kp DE_C  &kp DE_V        &kp DE_B    &kp DE_N  &kp DE_M          &kp DE_COMMA  &kp DE_PERIOD  &kp DE_ESC
+                                        &kp DE_LEFT_ALT  &mo 2  &kp DE_SPACE    &kp DE_RET  &mo 1  &kp DE_BACKSPACE
             >;
         };
 
