@@ -20,7 +20,7 @@
 
         Umlaut_UE {
             bindings = <&kp DE_U_UMLAUT>;
-            key-positions = <2 7>;
+            key-positions = <7 3>;
         };
 
         Umlaut_OE {
