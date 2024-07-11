@@ -84,7 +84,7 @@
         SPECIAL {
             bindings = <
 &trans           &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp ENTER          &kp UP       &kp BSPC            &kp DE_SQT   &kp DE_DOUBLE_QUOTES  &kp DE_LT      &kp DE_GT     &kp PAGE_UP       &trans
-&TOGGLE_CAPS     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp LEFT           &kp DOWN     &kp RIGHT           &kp DE_EXCL  &kp QMARK             &kp DE_DOLLAR  &kp DE_EURO   &kp DE_AMPERSAND  &trans
+&TOGGLE_CAPS     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp LEFT           &kp DOWN     &kp RIGHT           &kp DE_EXCL  &kp DE_QMARK          &kp DE_DOLLAR  &kp DE_EURO   &kp DE_AMPERSAND  &trans
 &TOGGLE_CONTROL  &COMMAND_ALTERNATIVE     &kp DE_RIGHT_BRACE        &kp DE_UNDERSCORE  &kp DE_PIPE  &kp DE_BACKSLASH    &kp DE_HASH  &kp DE_PERCENT        &kp DE_TILDE   &kp DE_CARET  &kp PG_DN         &trans
                                                                     &trans             &trans       &trans              &trans       &trans                &trans
             >;
