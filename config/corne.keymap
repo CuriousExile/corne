@@ -6,6 +6,7 @@
 
 #include "keys_de.h"
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -40,6 +41,34 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
+
+        Clear_Profile: Clear_Profile {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CLEAR_PROFILE";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_ALT>, <&bt BT_CLR>;
+        };
+
+        Profile_1: Profile_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PROFILE_1";
+            #binding-cells = <0>;
+            bindings = <&kp F1>, <&bt BT_SEL 1>;
+        };
+
+        Profile_2: Profile_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PROFILE_2";
+            #binding-cells = <0>;
+            bindings = <&kp F2>, <&bt BT_SEL 2>;
+        };
+
+        Profile_3: Profile_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PROFILE_3";
+            #binding-cells = <0>;
+            bindings = <&kp F3>, <&bt BT_SEL 3>;
+        };
     };
 
     keymap {
@@ -65,10 +94,10 @@
 
         layer_2 {
             bindings = <
-&kp F1  &kp F2    &kp F3     &kp F4       &kp F5         &kp F6       &kp F7              &kp F8         &kp F9       &kp F10        &kp F11  &kp F12
-&trans  &kp EXCL  &kp QMARK  &kp DE_EURO  &kp DE_DOLLAR  &kp PRCNT    &kp LC(LEFT_ARROW)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans   &trans
-&trans  &trans    &trans     &trans       &trans         &trans       &trans              &trans         &trans       &trans         &trans   &trans
-                             &trans       &trans         &trans       &trans              &trans         &trans
+&Profile_1  &Profile_2      &Profile_3  &kp F4       &kp F5         &kp F6       &kp F7              &kp F8         &kp F9          &kp F10        &kp F11  &kp F12
+&trans      &kp EXCL        &kp QMARK   &kp DE_EURO  &kp DE_DOLLAR  &kp PRCNT    &kp LC(LEFT_ARROW)  &kp PAGE_DOWN  &kp PAGE_UP     &kp LC(RIGHT)  &trans   &bt BT_SEL 0
+&trans      &Clear_Profile  &trans      &trans       &trans         &trans       &trans              &trans         &trans          &trans         &trans   &bt BT_SEL 1
+                                        &trans       &trans         &trans       &trans              &trans         &Clear_Profile
             >;
         };
     };
